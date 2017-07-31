@@ -1,9 +1,129 @@
 @charset "UTF-8";
 /*init*/
 html {
-  font-size: 125%;
+  font-size: 14px;
   font-family: Arial, "Times New Roman", "Microsoft YaHei", SimSun, SimHei;
   font-weight: 500;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+* { box-sizing: border-box; }
+/*row and col*/
+.table{
+  &:after{
+    content: "";
+    display: table;
+  }
+}
+.row{
+  padding-right:15px;
+  padding-left:15px;
+  margin-right:auto;
+  margin-left:auto;
+  &:after{
+    display: block;
+    content: "";
+    clear: both;
+  }
+}
+@media (min-width:768px){
+  .row{
+    width:738px
+  }
+}
+@media (min-width:992px){
+  .row{
+    width:962px
+  }
+}
+@media (min-width:1200px){
+  .row{
+    width:1170px
+  }
+}
+.col-md-4{
+  @media (min-width: 992px){
+    width: 33.33333333%;
+    float: left;
+  }
+}
+.col-md-6{
+  @media (min-width: 992px){
+    width: 50%;
+    float: left;
+  }
+}
+.col-md-2 {
+  @media (min-width: 992px){
+    width: 16.66666667%;
+    float: left;
+  }
+}
+/*友情链接*/
+.footer-1{
+  padding-bottom: 30px;
+  @media (max-width: 767px) {
+    display: none;
+  }
+  .footer-a-under{
+    width: 63px;
+    height: 2px;
+    background-color: #1DB176;
+    position: relative;
+    left: -15px;
+    display: none;
+  }
+  li{
+    &:hover .footer-a-under{
+      display: block;
+    }
+  }
+  h4{
+    line-height: 50px;
+    margin: 10px 0;
+    text-align: center;
+  }
+  .ul-height{
+    height: 50px
+  }
+  ul{
+    margin: 0 0 10px 0;
+  }
+  li{
+    width: 10%;
+    color: #999;
+    font-size: 12px;
+    float: left;
+    cursor: pointer;
+  }
+}
+/*other footer*/
+.footer-bottom{
+  background-color: #1DB176;
+  h5{
+    color: #FFF;
+    font-size: 14px;
+    margin: 10px 0;
+    font-weight: 500;
+  }
+  h6{
+    color: #FFF;
+    cursor: pointer;
+    margin: 10px 0;
+    font-weight: 500;
+    font-size: 12px;
+  }
+  .underline{
+    padding-bottom: 4px;border-bottom: solid;border-color: #1DB176;border-bottom-width: 1px;
+    &:hover{
+      padding-bottom: 4px;border-bottom: solid;border-color: #FFF;border-bottom-width: 1px;
+    }
+  }
+  .QR-code{
+    width: 92px;
+    height: 92px;
+    background-image: url("../images/CssGaga.png");
+    background-repeat: no-repeat;
+    background-position: 0 -111px;
+  }
 }

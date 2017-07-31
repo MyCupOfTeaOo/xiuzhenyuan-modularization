@@ -1,12 +1,13 @@
 @charset "UTF-8";
 /*init*/
 html {
-  font-size: 125%;
+  font-size: 14px;;
   font-family: Arial, "Times New Roman", "Microsoft YaHei", SimSun, SimHei;
   font-weight: 500;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+* { box-sizing: border-box; }
 /*a*/
 /*row and col*/
 .row{
@@ -41,7 +42,6 @@ html {
 }
 /*客服热线*/
 .span1{
-  font-size: 0.7rem;
   color: #1DB176;
   line-height: 40px;
   float: left;
