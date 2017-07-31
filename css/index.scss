@@ -7,6 +7,14 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+/*clear*/
+.clear{
+  &:after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
 /*btn*/
 .btn{
   cursor: pointer;
@@ -302,14 +310,6 @@ h6{
   margin-top: 40px;
   @media (max-width: 424px){
     margin-top: 0;
-  }
-}
-/*clear*/
-.clear{
-  &:after{
-    content: "";
-    display: block;
-    clear: both;
   }
 }
 .teacher{

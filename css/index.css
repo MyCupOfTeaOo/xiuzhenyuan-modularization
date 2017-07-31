@@ -6,6 +6,12 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+/*clear*/
+.clear:after, .col-md-3:after, .col-md-6:after, .col-xs-6:after, .col-xs-4:after, .col-xs-8:after, .f1:after {
+  content: "";
+  display: block;
+  clear: both; }
+
 /*btn*/
 .btn {
   cursor: pointer; }
@@ -272,12 +278,6 @@ h6 {
   @media (max-width: 424px) {
     .learn-margin {
       margin-top: 0; } }
-
-/*clear*/
-.clear:after, .col-md-3:after, .col-md-6:after, .col-xs-6:after, .col-xs-4:after, .col-xs-8:after, .f1:after {
-  content: "";
-  display: block;
-  clear: both; }
 
 .teacher {
   background-color: #FFF;
