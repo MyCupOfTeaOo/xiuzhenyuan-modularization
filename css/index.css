@@ -1,0 +1,92 @@
+/*init*/
+html {
+  font-size: 125%;
+  font-family: Arial, "Times New Roman", "Microsoft YaHei", SimSun, SimHei;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+/*main*/
+.rotation {
+  font-size: 0;
+  position: relative;
+  width: 100%;
+  overflow: hidden; }
+  .rotation:after {
+    display: block;
+    content: "";
+    clear: both; }
+  .rotation img {
+    width: 100%;
+    margin: 0;
+    display: block;
+    position: absolute;
+    top: 0;
+    cursor: default; }
+@keyframes img {
+  0% {
+    right: -100%; }
+  16.666667% {
+    right: -100%; }
+  33.333334% {
+    right: 0; }
+  50% {
+    right: 0; }
+  66.666668% {
+    right: 100%; }
+  100% {
+    right: 100%; } }
+@keyframes img-point {
+  0% {
+    background-color: #FFF; }
+  33.333334% {
+    background-color: #FFF; }
+  33.333335% {
+    background-color: inherit; }
+  100% {
+    background-color: inherit; } }
+  .rotation .img-init {
+    position: inherit;
+    z-index: 11;
+    animation: img 6s both -2s; }
+  .rotation .img-1 {
+    z-index: 1;
+    animation: img 6s infinite 4s; }
+  .rotation .img-2 {
+    z-index: 10;
+    animation: img 6s infinite; }
+  .rotation .img-3 {
+    z-index: 5;
+    animation: img 6s infinite 2s; }
+  .rotation .point-position {
+    position: absolute;
+    z-index: 20;
+    bottom: 30px;
+    right: 50%;
+    transform: translate(50%); }
+  .rotation .point {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #FFF;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 3px;
+    cursor: pointer; }
+  .rotation .p1 {
+    animation: img-point 6s infinite -1s; }
+  .rotation .p2 {
+    animation: img-point 6s infinite 1s; }
+  .rotation .p3 {
+    animation: img-point 6s infinite 3s; }
+  .rotation .icon-houtui, .rotation .icon-qianjin {
+    z-index: 20;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer; }
+  .rotation .icon-houtui {
+    left: 10px; }
+  .rotation .icon-qianjin {
+    right: 10px; }
+
+/*# sourceMappingURL=index.css.map */
