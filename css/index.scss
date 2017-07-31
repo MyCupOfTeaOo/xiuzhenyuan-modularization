@@ -1,13 +1,72 @@
 @charset "UTF-8";
 /*init*/
 html {
-  font-size: 125%;
+  font-size: 14px;
   font-family: Arial, "Times New Roman", "Microsoft YaHei", SimSun, SimHei;
   font-weight: 500;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+/*btn*/
+.btn{
+  cursor: pointer;
+}
+/*col and row*/
+.col-md-3{
+  @extend .clear;
+  @media (min-width: 992px){
+    width:25%;
+    float: left;
+    padding: 0 15px;
+  }
+}
+.col-md-6{
+  @extend .clear;
+}
+.col-xs-6{
+  @extend .clear;
+}
+.col-xs-4 {
+  width: 33.33333333%;
+  float: left;
+  padding: 0 15px;
+  @extend .clear;
+}
+.col-xs-8 {
+  width: 66.66666667%;
+  float: left;
+  @extend .clear;
+}
+.col-sm-3{
+  @media (min-width: 768px){
+    width: 25%;
+    float: left;
+  }
+}
 /*main*/
+main{
+  background-color: #FAFAFA;
+}
+h4{
+  line-height: 50px;
+  margin: 10px 0;
+  text-align: center;
+  font-size: 18px;
+}
+h6{
+  color: #999;
+  cursor: pointer;
+  margin: 10px 0;
+  font-weight: 500;
+  font-size: 12px;
+}
+.h6-regulation{
+  max-width: 200px;
+  margin: auto;
+  @media (max-width: 767px){
+    padding-bottom: 40px;
+  }
+}
 .rotation{
   font-size: 0;
   position: relative;
@@ -43,11 +102,7 @@ html {
   .img-init{
     position: inherit;
     z-index: 11;
-    animation: img 6s both -2s;
-  }
-  .img-1{
-    z-index: 1;
-    animation: img 6s infinite 4s;
+    animation: img 6s both infinite -2s;
   }
   .img-2{
     z-index: 10;
@@ -98,4 +153,257 @@ html {
     @extend %icon;
     right: 10px;
   }
+}
+.publicize{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  %i{
+    background-image: url("../images/CssGaga.png");
+    background-repeat: no-repeat;
+    margin: auto;
+  }
+  .i1{
+    width: 43px;
+    height: 62px;
+    background-position: -94px -111px;
+    @extend %i;
+  }
+  .i2{
+    width: 60px;
+    height: 48px;
+    background-position: -441px -57px;
+    margin-top: 14px;
+    @extend %i;
+  }
+  .i3{
+    width: 52px;
+    height: 55px;
+    background-position: -441px 0;
+    margin-top: 7px;
+    @extend %i;
+  }
+  .i4{
+    width: 14px;
+    height: 14px;
+     @extend  %i;
+    background-position: -502.5px 1px;
+    float: left;
+  }
+  .publicize-4{
+    padding-top: 30px;
+    border-left-style: dashed;
+    border-left-width: 1px;
+    border-left-color: #DEDEDE;
+    padding-bottom: 30px;
+    padding-left: 40px;
+    @media (max-width: 767px) {
+      padding-top: 30px;
+      border-left: none;
+      padding-bottom: 30px;
+    }
+  }
+  .media-my1 {
+    @media (max-width: 767px) {
+      margin: 0 auto;
+      width: 200px;
+    }
+  }
+  .i4-regulation{
+    margin-top: 30px;
+  }
+  span{
+    display: block;
+    font-size: 0.65rem;
+    margin-top: -3px;
+    color: #1DB176;
+  }
+}
+.f1{
+  @extend .clear;
+  @media (max-width: 991px) {
+    margin-bottom: 40px;
+  }
+  @media (max-width: 424px) {
+    margin-bottom: 0;
+  }
+}
+.f2{
+  @media (max-width: 424px) {
+    float: none;
+    margin: 0 auto;
+    width: 80%;
+    margin-bottom: 40px;
+  }
+}
+.step{
+  height: 40px;
+  width: 40px;
+  background-color: #FFF;
+  border-radius: 50%;
+  -webkit-box-shadow: 1px 1px 5px #888888;
+  box-shadow: 1px 1px 5px #888888;
+  float: right;
+  span{
+    line-height: 20px;
+    display: block;
+    padding-top: 10px;
+    text-align: center;
+  }
+}
+.step-font{
+  color: #999;
+  width: 120px;
+  float: left;
+  @media (max-width: 424px) {
+    width: auto;
+  }
+}
+.step-into{
+  width: 27px;
+  height: 26px;
+  background-image: url("../images/CssGaga.png");
+  background-repeat: no-repeat;
+  background-position: -266px -169px;
+  float: right;
+  position: relative;
+  top: 10px;
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+.step-into2{
+  @media (max-width: 991px) {
+    display: none;
+  }
+}
+.learn-margin{
+  margin-top: 40px;
+  @media (max-width: 424px){
+    margin-top: 0;
+  }
+}
+/*clear*/
+.clear{
+  &:after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+.teacher{
+  background-color: #FFF;
+  padding: 20px;
+  border: solid;
+  border-color: #E2E2E2;
+  border-width: 1px;
+}
+%avator{
+  width: 108px;
+  height: 108px;
+  background-image: url("../images/CssGaga.png");
+  background-repeat: no-repeat;
+  margin: 0 auto;
+
+}
+.avator1{
+  background-position: -331px 0;
+  @extend %avator;
+}
+.avator2{
+  background-position: 0 0;
+  @extend %avator;
+}
+.avator3 {
+  background-position: -111px 0;
+  @extend %avator;
+}
+.avator4 {
+  background-position: -221px 0;
+  @extend %avator;
+}
+.width{
+  margin-top: 5px;
+  width: 60px;
+}
+.footer{
+  padding: 5px;
+  border-radius: 50%;
+  background-color: #FFF;
+  border: solid;
+  border-color: #E2E2E2;
+  border-width: 1px;
+  display: inline-block;
+}
+input[type="radio"]{
+  display: none;
+  &:checked{
+    &+.footer{
+      background-color: #1DB176;
+    }
+  }
+}
+.center-block{
+  margin-left: auto;
+  margin-right: auto;
+}
+.coo-main{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  @media (max-width: 991px) {
+    display: block;
+  }
+}
+.cooperation{
+  width: 20%;
+  min-width: 180px;
+  padding: 30px 0;
+  background-color: #FFF;
+  cursor: pointer;
+  border: solid;border-color: #FFF;border-width: 1px;
+  &:hover{
+    border: solid;border-color: #E2E2E2;border-width: 1px;
+  }
+  @media (max-width: 991px) {
+    width: 80%;
+    min-width: 180px;
+    margin: 0 auto;
+    background-color: #FFF;
+    cursor: pointer;
+  }
+}
+%ct{
+  background-image: url("../images/CssGaga.png");
+  background-repeat: no-repeat;
+  margin: auto;
+}
+.cooperation1{
+  width: 144px;
+  height: 55px;
+  @extend %ct;
+  background-position: -320px -111px;
+}
+.cooperation2{
+  width: 53px;
+  height: 58px;
+  @extend %ct;
+  background-position: -139px -111px;
+}
+.cooperation3{
+  width: 134px;
+  height: 47px;
+  @extend %ct;
+  background-position: -320px -168px;
+}
+.cooperation4{
+  width: 170px;
+  height: 39px;
+  @extend %ct;
+  background-position: -94px -175px;
+}
+.cooperation5{
+  width: 124px;
+  height: 56px;
+  @extend %ct;
+  background-position: -194px -111px;
 }

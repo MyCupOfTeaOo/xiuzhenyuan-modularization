@@ -1,12 +1,60 @@
 /*init*/
 html {
-  font-size: 125%;
+  font-size: 14px;
   font-family: Arial, "Times New Roman", "Microsoft YaHei", SimSun, SimHei;
   font-weight: 500;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+/*btn*/
+.btn {
+  cursor: pointer; }
+
+/*col and row*/
+@media (min-width: 992px) {
+  .col-md-3 {
+    width: 25%;
+    float: left;
+    padding: 0 15px; } }
+
+.col-xs-4 {
+  width: 33.33333333%;
+  float: left;
+  padding: 0 15px; }
+
+.col-xs-8 {
+  width: 66.66666667%;
+  float: left; }
+
+@media (min-width: 768px) {
+  .col-sm-3 {
+    width: 25%;
+    float: left; } }
+
 /*main*/
+main {
+  background-color: #FAFAFA; }
+
+h4 {
+  line-height: 50px;
+  margin: 10px 0;
+  text-align: center;
+  font-size: 18px; }
+
+h6 {
+  color: #999;
+  cursor: pointer;
+  margin: 10px 0;
+  font-weight: 500;
+  font-size: 12px; }
+
+.h6-regulation {
+  max-width: 200px;
+  margin: auto; }
+  @media (max-width: 767px) {
+    .h6-regulation {
+      padding-bottom: 40px; } }
+
 .rotation {
   font-size: 0;
   position: relative;
@@ -48,10 +96,7 @@ html {
   .rotation .img-init {
     position: inherit;
     z-index: 11;
-    animation: img 6s both -2s; }
-  .rotation .img-1 {
-    z-index: 1;
-    animation: img 6s infinite 4s; }
+    animation: img 6s both infinite -2s; }
   .rotation .img-2 {
     z-index: 10;
     animation: img 6s infinite; }
@@ -88,5 +133,227 @@ html {
     left: 10px; }
   .rotation .icon-qianjin {
     right: 10px; }
+
+.publicize {
+  padding-top: 50px;
+  padding-bottom: 50px; }
+  .publicize .i1, .publicize .i2, .publicize .i3, .publicize .i4 {
+    background-image: url("../images/CssGaga.png");
+    background-repeat: no-repeat;
+    margin: auto; }
+  .publicize .i1 {
+    width: 43px;
+    height: 62px;
+    background-position: -94px -111px; }
+  .publicize .i2 {
+    width: 60px;
+    height: 48px;
+    background-position: -441px -57px;
+    margin-top: 14px; }
+  .publicize .i3 {
+    width: 52px;
+    height: 55px;
+    background-position: -441px 0;
+    margin-top: 7px; }
+  .publicize .i4 {
+    width: 14px;
+    height: 14px;
+    background-position: -502.5px 1px;
+    float: left; }
+  .publicize .publicize-4 {
+    padding-top: 30px;
+    border-left-style: dashed;
+    border-left-width: 1px;
+    border-left-color: #DEDEDE;
+    padding-bottom: 30px;
+    padding-left: 40px; }
+    @media (max-width: 767px) {
+      .publicize .publicize-4 {
+        padding-top: 30px;
+        border-left: none;
+        padding-bottom: 30px; } }
+  @media (max-width: 767px) {
+    .publicize .media-my1 {
+      margin: 0 auto;
+      width: 200px; } }
+  .publicize .i4-regulation {
+    margin-top: 30px; }
+  .publicize span {
+    display: block;
+    font-size: 0.65rem;
+    margin-top: -3px;
+    color: #1DB176; }
+
+@media (max-width: 991px) {
+  .f1 {
+    margin-bottom: 40px; } }
+@media (max-width: 424px) {
+  .f1 {
+    margin-bottom: 0; } }
+
+@media (max-width: 424px) {
+  .f2 {
+    float: none;
+    margin: 0 auto;
+    width: 80%;
+    margin-bottom: 40px; } }
+
+.step {
+  height: 40px;
+  width: 40px;
+  background-color: #FFF;
+  border-radius: 50%;
+  -webkit-box-shadow: 1px 1px 5px #888888;
+  box-shadow: 1px 1px 5px #888888;
+  float: right; }
+  .step span {
+    line-height: 20px;
+    display: block;
+    padding-top: 10px;
+    text-align: center; }
+
+.step-font {
+  color: #999;
+  width: 120px;
+  float: left; }
+  @media (max-width: 424px) {
+    .step-font {
+      width: auto; } }
+
+.step-into {
+  width: 27px;
+  height: 26px;
+  background-image: url("../images/CssGaga.png");
+  background-repeat: no-repeat;
+  background-position: -266px -169px;
+  float: right;
+  position: relative;
+  top: 10px; }
+  @media (max-width: 767px) {
+    .step-into {
+      display: none; } }
+
+@media (max-width: 991px) {
+  .step-into2 {
+    display: none; } }
+
+.learn-margin {
+  margin-top: 40px; }
+  @media (max-width: 424px) {
+    .learn-margin {
+      margin-top: 0; } }
+
+/*clear*/
+.clear:after, .col-md-3:after, .col-md-6:after, .col-xs-6:after, .col-xs-4:after, .col-xs-8:after, .f1:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+.teacher {
+  background-color: #FFF;
+  padding: 20px;
+  border: solid;
+  border-color: #E2E2E2;
+  border-width: 1px; }
+
+.avator1, .avator2, .avator3, .avator4 {
+  width: 108px;
+  height: 108px;
+  background-image: url("../images/CssGaga.png");
+  background-repeat: no-repeat;
+  margin: 0 auto; }
+
+.avator1 {
+  background-position: -331px 0; }
+
+.avator2 {
+  background-position: 0 0; }
+
+.avator3 {
+  background-position: -111px 0; }
+
+.avator4 {
+  background-position: -221px 0; }
+
+.width {
+  margin-top: 5px;
+  width: 60px; }
+
+.footer {
+  padding: 5px;
+  border-radius: 50%;
+  background-color: #FFF;
+  border: solid;
+  border-color: #E2E2E2;
+  border-width: 1px;
+  display: inline-block; }
+
+input[type="radio"] {
+  display: none; }
+  input[type="radio"]:checked + .footer {
+    background-color: #1DB176; }
+
+.center-block {
+  margin-left: auto;
+  margin-right: auto; }
+
+.coo-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  @media (max-width: 991px) {
+    .coo-main {
+      display: block; } }
+
+.cooperation {
+  width: 20%;
+  min-width: 180px;
+  padding: 30px 0;
+  background-color: #FFF;
+  cursor: pointer;
+  border: solid;
+  border-color: #FFF;
+  border-width: 1px; }
+  .cooperation:hover {
+    border: solid;
+    border-color: #E2E2E2;
+    border-width: 1px; }
+  @media (max-width: 991px) {
+    .cooperation {
+      width: 80%;
+      min-width: 180px;
+      margin: 0 auto;
+      background-color: #FFF;
+      cursor: pointer; } }
+
+.cooperation1, .cooperation2, .cooperation3, .cooperation4, .cooperation5 {
+  background-image: url("../images/CssGaga.png");
+  background-repeat: no-repeat;
+  margin: auto; }
+
+.cooperation1 {
+  width: 144px;
+  height: 55px;
+  background-position: -320px -111px; }
+
+.cooperation2 {
+  width: 53px;
+  height: 58px;
+  background-position: -139px -111px; }
+
+.cooperation3 {
+  width: 134px;
+  height: 47px;
+  background-position: -320px -168px; }
+
+.cooperation4 {
+  width: 170px;
+  height: 39px;
+  background-position: -94px -175px; }
+
+.cooperation5 {
+  width: 124px;
+  height: 56px;
+  background-position: -194px -111px; }
 
 /*# sourceMappingURL=index.css.map */
