@@ -1,9 +1,109 @@
 /*init*/
 html {
-  font-size: 125%;
+  font-size: 14px;
   font-family: Arial, "Times New Roman", "Microsoft YaHei", SimSun, SimHei;
   font-weight: 500;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
+
+/*clear*/
+.clear:after, main .left-box .btn:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+/*center*/
+.center-block {
+  margin-right: auto;
+  margin-left: auto; }
+
+/*a*/
+a {
+  text-decoration: none; }
+
+/*col and row*/
+@media (min-width: 768px) {
+  .col-sm-3 {
+    width: 25%;
+    float: left; } }
+
+@media (min-width: 768px) {
+  .col-sm-9 {
+    width: 75%;
+    float: left; } }
+
+/*h*/
+/*main*/
+main {
+  background-color: #FAFAFA;
+  padding-bottom: 100px; }
+  main #img1 {
+    width: 100%;
+    margin: 0; }
+  main span {
+    cursor: pointer;
+    color: #1DB176; }
+  main .left-box {
+    background-color: #FFF;
+    margin-top: 20px;
+    border: solid;
+    border-color: #E2E2E2;
+    border-width: 1px;
+    border-radius: 8px; }
+    main .left-box .btn {
+      line-height: 14px;
+      padding: 0;
+      width: 60px;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      color: #1DB176;
+      background-color: #FFF;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      display: block;
+      white-space: nowrap;
+      cursor: pointer; }
+  main .right-box {
+    background-color: #FFF;
+    margin-top: 20px;
+    border: solid;
+    border-color: #E2E2E2;
+    border-width: 1px;
+    border-radius: 8px;
+    padding-top: 15px; }
+    @media (min-width: 768px) {
+      main .right-box {
+        margin-left: 15px; } }
+    main .right-box img {
+      padding: 40px 30px 40px 60px;
+      float: left; }
+    main .right-box .right-top {
+      border-bottom: solid 1px #EDEDED;
+      padding-right: 50px; }
+    main .right-box .right-bottom {
+      padding: 50px; }
+  main .scan {
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    border: 1px solid #FF6500;
+    display: inline-block;
+    position: relative;
+    top: 2px; }
+  main h4 {
+    font-weight: 600;
+    line-height: 60px;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  main p {
+    color: #999;
+    padding-bottom: 20px; }
+
+input[name="r"]:checked + .btn {
+  color: #FF6500; }
+  input[name="r"]:checked + .btn .scan {
+    background-color: #FBA36D; }
 
 /*# sourceMappingURL=cooperation.css.map */

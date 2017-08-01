@@ -1,9 +1,130 @@
 @charset "UTF-8";
 /*init*/
 html {
-  font-size: 125%;
+  font-size: 14px;
   font-family: Arial, "Times New Roman", "Microsoft YaHei", SimSun, SimHei;
   font-weight: 500;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+/*clear*/
+.clear{
+  &:after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+/*center*/
+.center-block{
+  margin-right: auto;
+  margin-left: auto;
+}
+/*a*/
+a{
+  text-decoration: none;
+}
+/*col and row*/
+.col-sm-3 {
+  @media (min-width: 768px) {
+    width: 25%;
+    float: left;
+  }
+}
+.col-sm-9 {
+  @media (min-width: 768px) {
+    width: 75%;
+    float: left;
+  }
+}
+/*h*/
+/*main*/
+main{
+  background-color: #FAFAFA;
+  padding-bottom: 100px;
+  #img1{
+    width: 100%;
+    margin: 0;
+  }
+  span{
+    cursor: pointer;
+    color: #1DB176;
+  }
+  .left-box{
+    background-color: #FFF;
+    margin-top: 20px;
+    border: solid;
+    border-color: #E2E2E2;
+    border-width: 1px;
+    border-radius: 8px;
+    .btn{
+      line-height: 14px;
+      padding: 0;
+      width: 60px;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      color: #1DB176;
+      background-color: #FFF;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      @extend .clear;
+      display: block;
+      white-space: nowrap;
+      cursor: pointer;
+    }
+  }
+  .right-box{
+    background-color: #FFF;
+    margin-top: 20px;
+    border: solid;
+    border-color: #E2E2E2;
+    border-width: 1px;
+    border-radius: 8px;
+    padding-top: 15px;
+    @media (min-width: 768px) {
+      margin-left: 15px;
+    }
+    img{
+      padding: 40px 30px 40px 60px;
+      float: left;
+    }
+    .right-top{
+      border-bottom: solid 1px #EDEDED;
+      padding-right: 50px;
+    }
+    .right-bottom{
+      padding: 50px;
+    }
+  }
+  .scan{
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    border: 1px solid #FF6500;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+  }
+  h4 {
+    font-weight: 600;
+    line-height: 60px;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  p{
+    color: #999;
+    padding-bottom: 20px;
+  }
+}
+input[name="r"]{
+  &:checked{
+    &+.btn{
+      color: #FF6500;
+      .scan{
+        background-color: #FBA36D;
+      }
+    }
+  }
 }
